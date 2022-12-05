@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+  <package name="articleManage" extends="struts-default" namespace="/admin">
+  	<action name="articleManageAction_*" method="{1}" class="articleManageAction">
+  		<result name="success">articleManage.jsp</result>
+  		<result name="updateArticle">updateArticle.jsp</result>
+  	</action>
+  </package>
+  
+  
+<package name="_article" extends="struts-default" namespace="/">
+  	<action name="articleManageAction_*" method="{1}" class="articleManageAction">
+  		<result name="success">article.jsp</result>
+  	
+  	</action>
+  </package>
+  
+</struts>	
